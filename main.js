@@ -162,15 +162,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
                       if (hour >= 5 && hour < 7) {
                         document.getElementById('backgroundvideoSunset').style.display = 'block';
+                              document.getElementById('backgroundvideoMoon').style.display = 'none';
+                                 document.getElementById('background-videoSun').style.display = 'none';
                     }
                     else if (hour >= 7 && hour < 16) {
                         document.getElementById('background-videoSun').style.display = 'block';
+                            document.getElementById('backgroundvideoMoon').style.display = 'none';
+                             document.getElementById('backgroundvideoSunset').style.display = 'none';
                     }
                     else if (hour >= 16 && hour < 19) {
                         document.getElementById('backgroundvideoSunset').style.display = 'block';
+                          document.getElementById('backgroundvideoMoon').style.display = 'none';
+                                 document.getElementById('background-videoSun').style.display = 'none';
                     }
                      else if (hour >= 19 && hour < 5) {
                         document.getElementById('backgroundvideoMoon').style.display = 'block';
+                             document.getElementById('background-videoSun').style.display = 'none';
+                             document.getElementById('backgroundvideoSunset').style.display = 'none';
                     }
 
                     } else if (mode === "Clouds") {
@@ -179,12 +187,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         document.getElementById('background-videoSun').style.display = 'none';
                         document.getElementById('background-videoRain').style.display = 'none';
                         document.getElementById('background-videoSnow').style.display = 'none';
+                            document.getElementById('backgroundvideoMoon').style.display = 'none';
+                             document.getElementById('backgroundvideoSunset').style.display = 'none';
                     } else if (mode === "Rain") {
                         mode = "גשום";
                       document.getElementById('background-videoRain').style.display = 'block';
                       document.getElementById('background-videoClouds').style.display = 'none';
                       document.getElementById('background-videoSun').style.display = 'none';
                       document.getElementById('background-videoSnow').style.display = 'none';
+                            document.getElementById('backgroundvideoMoon').style.display = 'none';
+                             document.getElementById('backgroundvideoSunset').style.display = 'none';
                     } else if (mode === "Thunderstorm") {
                         mode = "סופת רעמים";
                     } else if (mode === "Drizzle") {
@@ -195,6 +207,8 @@ document.addEventListener('DOMContentLoaded', function() {
                      document.getElementById('background-videoSun').style.display = 'none';
                      document.getElementById('background-videoClouds').style.display = 'none';
                      document.getElementById('background-videoRain').style.display = 'none';
+                            document.getElementById('backgroundvideoMoon').style.display = 'none';
+                             document.getElementById('backgroundvideoSunset').style.display = 'none';
                     }
     
                     // Log data to console
@@ -412,51 +426,66 @@ document.addEventListener('DOMContentLoaded', function() {
                 var now = new Date();
                 var hour = now.getHours();
     
-                // Handle weather conditions
-                if (mode === "Clear") {
-                    mode = "בהיר";
+                                    // Handle weather conditions
+                    if (mode === "Clear") {
+                        mode = "בהיר";
 
-                  document.getElementById('background-videoClouds').style.display = 'none';
-                  document.getElementById('background-videoRain').style.display = 'none';
-                  document.getElementById('background-videoSnow').style.display = 'none';
+                      document.getElementById('background-videoClouds').style.display = 'none';
+                      document.getElementById('background-videoRain').style.display = 'none';
+                      document.getElementById('background-videoSnow').style.display = 'none';
 
-                  if (hour >= 5 && hour < 7) {
-                    document.getElementById('backgroundvideoSunset').style.display = 'block';
-                }
-                else if (hour >= 7 && hour < 16) {
-                    document.getElementById('background-videoSun').style.display = 'block';
-                }
-                else if (hour >= 16 && hour < 19) {
-                    document.getElementById('backgroundvideoSunset').style.display = 'block';
-                }
-                 else if (hour >= 19 && hour < 5) {
-                    document.getElementById('backgroundvideoMoon').style.display = 'block';
-                }
+                      if (hour >= 5 && hour < 7) {
+                        document.getElementById('backgroundvideoSunset').style.display = 'block';
+                              document.getElementById('backgroundvideoMoon').style.display = 'none';
+                                 document.getElementById('background-videoSun').style.display = 'none';
+                    }
+                    else if (hour >= 7 && hour < 16) {
+                        document.getElementById('background-videoSun').style.display = 'block';
+                            document.getElementById('backgroundvideoMoon').style.display = 'none';
+                             document.getElementById('backgroundvideoSunset').style.display = 'none';
+                    }
+                    else if (hour >= 16 && hour < 19) {
+                        document.getElementById('backgroundvideoSunset').style.display = 'block';
+                          document.getElementById('backgroundvideoMoon').style.display = 'none';
+                                 document.getElementById('background-videoSun').style.display = 'none';
+                    }
+                     else if (hour >= 19 && hour < 5) {
+                        document.getElementById('backgroundvideoMoon').style.display = 'block';
+                             document.getElementById('background-videoSun').style.display = 'none';
+                             document.getElementById('backgroundvideoSunset').style.display = 'none';
+                    }
 
-                } else if (mode === "Clouds") {
-                    mode = "מעונן";
-                    document.getElementById('background-videoClouds').style.display = 'block';
-                    document.getElementById('background-videoSun').style.display = 'none';
-                    document.getElementById('background-videoRain').style.display = 'none';
-                    document.getElementById('background-videoSnow').style.display = 'none';
-                } else if (mode === "Rain") {
-                    mode = "גשום";
-                  document.getElementById('background-videoRain').style.display = 'block';
-                  document.getElementById('background-videoClouds').style.display = 'none';
-                  document.getElementById('background-videoSun').style.display = 'none';
-                  document.getElementById('background-videoSnow').style.display = 'none';
-                } else if (mode === "Thunderstorm") {
-                    mode = "סופת רעמים";
-                } else if (mode === "Drizzle") {
-                    mode = "טפטוף";
-                } else if (mode === "Snow") {
-                    mode = "שלג";
-                 document.getElementById('background-videoSnow').style.display = 'block';
-                 document.getElementById('background-videoSun').style.display = 'none';
-                 document.getElementById('background-videoClouds').style.display = 'none';
-                 document.getElementById('background-videoRain').style.display = 'none';
-                }
+                    } else if (mode === "Clouds") {
+                        mode = "מעונן";
+                        document.getElementById('background-videoClouds').style.display = 'block';
+                        document.getElementById('background-videoSun').style.display = 'none';
+                        document.getElementById('background-videoRain').style.display = 'none';
+                        document.getElementById('background-videoSnow').style.display = 'none';
+                            document.getElementById('backgroundvideoMoon').style.display = 'none';
+                             document.getElementById('backgroundvideoSunset').style.display = 'none';
+                    } else if (mode === "Rain") {
+                        mode = "גשום";
+                      document.getElementById('background-videoRain').style.display = 'block';
+                      document.getElementById('background-videoClouds').style.display = 'none';
+                      document.getElementById('background-videoSun').style.display = 'none';
+                      document.getElementById('background-videoSnow').style.display = 'none';
+                            document.getElementById('backgroundvideoMoon').style.display = 'none';
+                             document.getElementById('backgroundvideoSunset').style.display = 'none';
+                    } else if (mode === "Thunderstorm") {
+                        mode = "סופת רעמים";
+                    } else if (mode === "Drizzle") {
+                        mode = "טפטוף";
+                    } else if (mode === "Snow") {
+                        mode = "שלג";
+                     document.getElementById('background-videoSnow').style.display = 'block';
+                     document.getElementById('background-videoSun').style.display = 'none';
+                     document.getElementById('background-videoClouds').style.display = 'none';
+                     document.getElementById('background-videoRain').style.display = 'none';
+                            document.getElementById('backgroundvideoMoon').style.display = 'none';
+                             document.getElementById('backgroundvideoSunset').style.display = 'none';
+                    }
 
+                
                 // Log data to console
                 console.log(data);
                 console.log(formattedNumberTemp);
