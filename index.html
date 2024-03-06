@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="places.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6ADO387t-1AHIHem9HkcFJ-X9JL5bXC8&libraries=places"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlWHbz_io1Vv6bQp-T86nelpIn1yTvYGc&libraries=places"></script>
+
+    <title>israel weather</title>
+
+</head>
+
+<div id="videobackground">
+    <video id="background-videoRain" autoplay loop muted>
+        <source src="rain.mp4" type="video/mp4" id="rain">
+      </video>
+
+      <video id="background-videoClouds" autoplay loop muted>
+        <source src="clouds.mp4" type="video/mp4" id="clouds">
+      </video>
+
+      <video id="background-videoSun" autoplay loop muted>
+        <source src="sun.mp4" type="video/mp4" id="Sun">
+      </video>
+
+      <video id="background-videoSnow" autoplay loop muted>
+        <source src="snow.mp4" type="video/mp4" id="Snow">
+      </video>
+
+      <video id="backgroundvideoMoon" autoplay loop muted>
+        <source src="moon.mp4" type="video/mp4" id="moon">
+      </video>
+
+      <video id="backgroundvideoSunset" autoplay loop muted>
+        <source src="sunset.mp4" type="video/mp4" id="sunset">
+      </video>
+
+
+    </div>
+
+
+<body id="body"> 
+
+    <div class="myHome">
+        <i class="fas fa-bars" id="menu-icon" ></i>
+        <p style="font-weight: bolder;">הבית שלי</p>
+    </div>
+
+ 
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="karney.html">קרני שומרון</a></li>
+            <li><a href="itamar.html">איתמר</a></li>
+            <li><a href="petah.html">פתח תקווה</a></li>
+            <li><a href="index.html">המיקום שלי</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="containerplace-input">
+    <input id="place-input" type="text" placeholder="חפש לפי מיקום ">
+ 
+</div>
+
+
+    <div class="container">
+        <p id="p" class="black-border"></p>
+    
+    </div>
+
+    <div id="dataTime"></div>
+
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6ADO387t-1AHIHem9HkcFJ-X9JL5bXC8&libraries=places"></script>
+
+
+
+</body>
+
+</html>

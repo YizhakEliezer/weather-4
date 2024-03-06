@@ -1,0 +1,17 @@
+
+
+  {
+    "name": "weather Ye",
+    "short_name": "weather Ye",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "cloudy.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+   }

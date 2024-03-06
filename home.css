@@ -1,0 +1,499 @@
+.container{
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+     align-items: center;/* Vertically centers the content */
+     flex-direction: column;
+     height: 70vh; 
+     /* border: 2px solid rgb(232, 0, 0);  */
+     /* Makes the container take up the full height of the viewport */
+    font-weight: bolder;
+ } 
+
+
+.black-border {
+    color: rgb(82, 151, 151);
+    text-align: center;
+    /* border: 2px solid rgb(232, 0, 0); */
+    font-family: "Amatic SC", sans-serif;
+  font-size: 11vh;
+  /* width: 200%; */
+  /* border: 2px solid rgb(232, 0, 0);  */
+  background-color: white;
+border-radius: 10px;
+border: 1px solid black;
+font-weight: bolder;
+} 
+
+.black-border img{
+  width: 70px;
+}
+
+
+body{
+  /* background-color: rgb(10, 10, 10); */
+  margin: 0;
+  padding: 0;
+  transition: background-color 1s ease;
+  /* background-color: #171c22; */
+  font-weight: bolder;
+}
+
+.myHome{
+  display: flex;
+    justify-content: end;
+     align-items:center;
+     flex-direction:row-reverse;
+     color: white;
+     /* border: 2px solid rgb(232, 0, 0); */
+     font-family: "Amatic SC", sans-serif;
+     font-weight: bold;
+     font-size: 4vh;
+     height: 6vh; 
+     font-weight: bolder;
+     /* background-color: white;
+     border: 1px solid black; */
+    
+}
+.myHome i{
+  /* border: 2px solid rgb(232, 0, 0); */
+  margin: 10px;
+  font-weight: bolder;
+  
+}
+.myHome p{
+  /* border: 2px solid rgb(232, 0, 0); */
+  padding: 5px;
+  font-weight: bolder;
+}
+
+
+
+.menu {
+  display: flex;
+  justify-content: end;
+   align-items:center;
+   flex-direction:row-reverse;
+   color: rgb(82, 151, 151);
+   font-family: "Amatic SC", sans-serif;
+   font-weight: bold;
+   font-size: 4vh;
+   height: 100%; 
+display: none;
+text-align: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  /* border: 2px solid rgb(232, 0, 0); */
+  border-radius: 10px;
+  /* margin: 20px; */
+}
+
+.menu ul {
+  
+  background-color: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.menu ul li a {
+ 
+  background-color: white;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul li a:hover {
+ 
+  background-color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+#dataTime{
+  border: 1px solid black;
+  background-color: white; 
+   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   /* border: 1px solid rgb(223, 0, 0);   */
+ /* height: 17vh;
+position: relative;
+top: 120px;  */
+font-family: "Amatic SC", sans-serif;
+font-weight:bold;
+font-size: 3vh;
+padding: 15px;
+position: relative;
+top:20px;
+font-weight: bolder;
+ }
+
+ #dataTime p1{
+ margin: 10px;
+ font-weight: bolder;
+ }
+ #dataTime img{
+  margin: 15px;
+width: 60px;
+background-color: rgb(174, 228, 228);
+/* border: 10px solid red; */
+border-radius: 10px;
+font-weight: bolder;
+  }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .black-border {
+    font-size: 10vh;/* Adjust the size for cell phones */
+    /* border: 2px solid rgb(235, 0, 0);  */
+background-color: white;
+border-radius: 10px;
+  }
+  .container{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin: 20px;
+    height: 68vh;
+    /* border: 2px solid rgb(235, 0, 0);  */
+
+    position: relative;
+     top: 20px;
+  }
+
+
+
+
+hr {
+width: 100%;
+  border-top: 1px solid black;
+}
+
+
+  
+  #dataTime{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: right; 
+     align-items: end;
+     flex-direction: column;  
+    /* border: 1px solid rgb(223, 0, 0);  */
+    margin: 18px;
+  
+  } 
+
+
+#dataTime p{
+  border-radius: 10px;
+    font-family: "Amatic SC", sans-serif;
+    color: black;
+    font-size: 5vh;
+    font-weight:bold;
+    text-align: right; 
+  margin: 10px; 
+  height: 5px; 
+  font-weight: bolder;
+
+  
+  } 
+  #dataTime p1{
+    border-radius: 10px;
+      font-family: "Amatic SC", sans-serif;
+      color: rgb(82, 151, 151);
+      font-size: 5vh;
+      font-weight:bold;
+      text-align: right; 
+    position: relative;
+    bottom: 20px;
+     left: -190px;
+     font-weight: bolder;
+     /* background-color: rgb(42, 46, 46); */
+    } 
+
+    #dataTime p2{
+      border-radius: 10px;
+        font-family: "Amatic SC", sans-serif;
+        color: rgb(82, 151, 151);
+        font-size: 5vh;
+        font-weight:bold;
+        text-align: right; 
+      position: relative;
+      bottom: 20px;
+       left: -50px;
+       font-weight: bolder;
+       /* background-color: rgb(42, 46, 46); */
+      } 
+
+ #dataTime img{
+  border-radius: 10px;
+  position: relative;
+  left: -100px;
+  background-color: rgb(82, 151, 151);
+  width: 60px;
+ } 
+
+
+ 
+
+
+}
+
+
+
+
+
+
+/* For tablets */
+@media (min-width: 700px) and (max-width: 1366px) {
+  .black-border {
+    font-size: 10vh; /* Adjust the size for cell phones */
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .container {
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin: 20px;
+    height: 68vh;
+    position: relative;
+    top: 20px;
+  }
+  
+  hr {
+    width: 100%;
+    border-top: 1px solid black;
+  }
+  
+  #dataTime {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    flex-direction: column;
+    margin: 18px;
+  }
+  
+  #dataTime p {
+    font-family: "Amatic SC", sans-serif;
+    color: black;
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: right;
+    margin: 10px;
+    height: 5px;
+
+  }
+  
+  #dataTime p1 {
+    font-family: "Amatic SC", sans-serif;
+    color: rgb(82, 151, 151);
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+    bottom: 20px;
+    left: -550px;
+  }
+  
+  #dataTime p2 {
+    font-family: "Amatic SC", sans-serif;
+    color: rgb(82, 151, 151);
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: right;
+    position: relative;
+    bottom: 20px;
+    left: -250px;
+  }
+  
+  #dataTime img {
+    border-radius: 10px;
+    position: relative;
+    left: -140px;
+    background-color: rgb(82, 151, 151);
+    width: 60px;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+.containerplace-input{
+  display: flex;
+  justify-content: center;
+   align-items: center;
+   flex-direction: row;
+}
+
+#place-input{
+  font-family: "Amatic SC", sans-serif;
+  background-color: white;
+  color: rgb(82, 151, 151);
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 3px;
+position: relative;
+ top:30px;
+  text-align: center;
+  height: 60px;
+  font-size: 30px;
+  width: 250px;
+}
+
+::placeholder {
+  color: rgb(82, 151, 151);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: relative;
+} */
+
+
+
+
+#background-videoRain {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  display: none;
+
+}  
+
+
+#background-videoClouds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  display: none;
+
+}  
+
+
+#background-videoSun {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  display: none;
+}  
+
+
+#background-videoSnow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  display: none;
+} 
+
+
+#backgroundvideoSunset {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  display: none;
+} 
+
+
+#backgroundvideoMoon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  display: none;
+} 
+
+
+
